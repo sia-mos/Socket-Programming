@@ -73,17 +73,3 @@ Waiting for connection...
 
 The client connects to the server and can then perform file operations such as listing, uploading, and downloading files.
 
-## Learning Outcome
-
-This project provides practical experience with:
-
-* Client-server architecture
-* TCP socket communication
-* File handling in Python
-* Data transfer between client and server
-* Basic network programming
-
-## Author
-
-**Md. Siam Osman**
-
