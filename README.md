@@ -1,99 +1,83 @@
-# Custom FTP Server using Python Sockets
+# Custom FTP Server using Socket Programming 
 
-## Overview
+A simple **client-server file transfer application** developed in Python using **socket programming**.
+The project demonstrates how a client and server communicate over a network to perform basic file transfer operations.
 
-This project is a simple client-server file transfer system created using Python's
-socket programming. It demonstrates how two programs can communicate over a
-network and exchange files using TCP connections.
+## Project Structure
 
-The server manages the files, while the client sends requests to perform
-different file operations.
+* `server.py` – Runs the FTP server and handles client connections and file operations.
+* `client.py` – Connects to the server and provides commands for file transfer.
+* `README.md` – Contains project information and execution instructions.
 
-## How It Works
+## Key Features
 
-The project consists of two main programs:
+* **LIST** – Displays the files available on the server.
+* **UPLOAD** – Uploads a file from the client to the server.
+* **DOWNLOAD** – Downloads a file from the server to the client.
+* **EXIT** – Disconnects the client safely from the server.
 
-- **Server** – Waits for a client connection and handles file-related requests.
-- **Client** – Connects to the server and allows the user to interact with it.
+## Technologies Used
 
-The communication takes place through a TCP socket connection.
+* **Python**
+* **Socket Programming**
+* **TCP/IP Communication**
 
-## Available Operations
+## How to Run
 
-The client can request the server to:
+### Step 1: Open the Project
 
-| Command | Purpose |
-|---------|---------|
-| `LIST` | View the files available on the server |
-| `UPLOAD` | Send a file from the client to the server |
-| `DOWNLOAD` | Receive a file from the server |
-| `EXIT` | Close the connection |
+Open the project folder in **VS Code**.
 
-## Project Files
+### Step 2: Start the Server
+
+Open a terminal and run:
+
+```bash
+python server.py
+```
+
+Keep the server terminal running.
+
+### Step 3: Start the Client
+
+Open another terminal in the same project folder and run:
+
+```bash
+python client.py
+```
+
+### Step 4: Use the Commands
+
+After connecting to the server, use the available commands:
 
 ```text
-Custom-FTP-Server/
-│
-├── server.py
-├── client.py
-└── README.md
-server.py
+LIST
+UPLOAD
+DOWNLOAD
+EXIT
+```
 
-Contains the server-side code. It creates the socket, waits for a client,
-receives requests, and performs the required file operations.
+## Example
 
-client.py
+The server waits for a client connection:
 
-Contains the client-side code. It connects to the server and sends commands
-for listing, uploading, and downloading files.
+```text
+Server started...
+Waiting for connection...
+```
 
-Requirements
-Python 3.x
-Basic knowledge of Python
-A computer with VS Code or another Python IDE
+The client connects to the server and can then perform file operations such as listing, uploading, and downloading files.
 
-No external Python libraries are required.
+## Learning Outcome
 
-Running the Project
-1. Start the Server
+This project provides practical experience with:
 
-Open a terminal in the project directory and run:
+* Client-server architecture
+* TCP socket communication
+* File handling in Python
+* Data transfer between client and server
+* Basic network programming
 
-python server.py
+## Author
 
-The server will start and wait for a client connection.
-
-2. Start the Client
-
-Open a second terminal in the same project directory and run:
-
-python client.py
-
-The client will connect to the running server.
-
-3. Perform File Operations
-
-After connecting, use the available commands to list, upload, download,
-or exit the application.
-
-Technologies
-Python 3
-Socket Programming
-TCP/IP
-Client-Server Architecture
-File Handling
-Learning Objectives
-
-This project helps demonstrate:
-
-How TCP socket communication works
-How a client and server communicate
-Basic network programming in Python
-Sending and receiving data through sockets
-File transfer between two programs
-Conclusion
-
-The project provides a basic implementation of a custom FTP-style file
-transfer system using Python sockets. It demonstrates the fundamental
-concepts of client-server communication and network-based file sharing.
-
+**Md. Siam Osman**
