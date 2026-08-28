@@ -66,5 +66,5 @@ Server started...
 Waiting for connection...
 ```
 
-The client connects to the server and can then perform file operations such as listing, uploading, and downloading files.
+The client connects to the server and can then perform file operations such as listing, uploading, and downloading files.  
 
