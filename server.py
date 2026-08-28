@@ -51,5 +51,6 @@ while True:
     elif command == "EXIT":
         break
 
+
 conn.close()
 server.close()
